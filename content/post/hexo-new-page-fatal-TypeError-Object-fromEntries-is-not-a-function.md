@@ -1,6 +1,9 @@
 ---
 title: 'hexo new page fatal.(TypeError: Object.fromEntries is not a function)'
 date: 2022-04-25 17:12:52
+lastmod: 2022-05-25 17:12:52
+tags: ["NodeJs","Hexo"]
+categories: "Web"
 draft: false
 ---
 ## 生成hexo文章遇到TypeError: Object.fromEntries is not a function错误
