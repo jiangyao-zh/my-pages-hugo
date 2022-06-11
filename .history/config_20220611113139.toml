@@ -81,5 +81,4 @@ theme = "DoIt"
     ignoreLocation = false
     useExtendedSearch = false
     ignoreFieldNorm = false
-  [params.social]
-    GitHub = "https://github.com/jiangyao-zh"
+
