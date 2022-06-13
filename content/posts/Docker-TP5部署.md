@@ -15,7 +15,7 @@ draft: false
 4. Docker [20.10.14](https://docs.docker.com/engine/release-notes/)
 5. docker-compose [1.29.1](https://docs.docker.com/compose/release-notes/)（文件格式版本3.0，建议安装最新版本）
 
-{{< admonition type=note title="注意" open=true >}}
+{{< admonition type=note title="注意" >}}
 数据相对独立，本文不涉及数据库安装，建议使用mysql
 {{< /admonition >}}
 
