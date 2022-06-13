@@ -1,7 +1,7 @@
 ---
 title: 'Docker+TP5部署'
 date: 2022-05-26 10:25:19
-tags: ["Docker","Compose","PHP"]
+tags: ["Docker","Compose","PHP","Thinkphp"]
 categories: ["运维"]
 draft: false
 ---
@@ -17,7 +17,7 @@ draft: false
 
 ### 安装Docker
 
-```text
+```bash
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 
@@ -27,19 +27,19 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 1. 下载最新版的docker-compose文件
 
-    ```text
+    ```bash
     sudo curl -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
     ```
 
 2. 添加可执行权限
 
-    ```text
+    ```bash
     sudo chmod +x /usr/local/bin/docker-compose
     ```
 
 3. 查看版本
 
-    ```text
+    ```bash
     docker-compose -v
     docker-compose version 1.29.1, build 8dd22a9
     ```
@@ -48,13 +48,13 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 1. 创建php7.2的docker目录(每个项目支持PHP较为不同，所以版本号命名方便区分)
 
-    ```text
+    ```bash
     mkdir /docker/php7.2
     ```
 
 2. 在php7.2目录下新建docker-compose.yml文件
 
-    ```text
+    ```bash
         version: "3"
 
         services:
@@ -75,14 +75,14 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
             external: true 
     ```
 
-    ```text
+    ```bash
     FROM php:7.2.24-fpm
     RUN docker-php-ext-install pdo pdo_mysql #增加mysql扩展
     ```
 
 3. 启动服务
 
-   ```text
+   ```bash
    docker-compose up -d 
    ```
 
@@ -92,13 +92,13 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 1. 创建nginx的docker目录
 
-    ```text
+    ```bash
     mkdir /docker/nginx
     ```
 
 2. 在nginx目录下新建docker-compose.yml文件
 
-    ```text
+    ```bash
     version: "3"
     services:
     nginx:
@@ -122,7 +122,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 3. 配置TP5的conf，在/docker/nginx/conf/conf.d下创建tp.conf文件
 
-   ```text
+   ```bash
     server {
         listen 80;
         listen [::]:80;
@@ -172,7 +172,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 4. 启动服务
 
-   ```text
+   ```bash
    docker-compose up -d 
    ```
 
@@ -180,7 +180,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 ### 目录结构
 
-   ```text
+   ```bash
     ├── docker
     │   ├── nginx
     │   │   ├── conf

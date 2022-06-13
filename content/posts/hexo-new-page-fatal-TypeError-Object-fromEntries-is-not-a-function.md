@@ -18,25 +18,25 @@ NodeJs版本过低原因，需要 12.x 以上版本才行，本地版本是10.13
 
 1. 查看版本
 
-   ```text
+   ```bash
    node –v 
    ```
 
 2. 安装n模块
 
-   ```text
+   ```bash
    npm install -g n
    ```
 
 3. 安装最新的稳定版本
 
-   ```text
+   ```bash
    n stable
    ```
 
 4. 安装完成后，查看Node的版本，检查升级是否成功
 
-   ```text
+   ```bash
    node -v
    ```
 

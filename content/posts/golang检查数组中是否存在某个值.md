@@ -23,12 +23,12 @@ import (
 )
 
 func main() {
- var date string = "createdAt"
- dateType := []string{"createdAt", "updatedAt"}
- if slices.Contains[string](dateType, date) {
-  fmt.Println("yes")
- } else {
-  fmt.Println("no")
- }
+    var date string = "createdAt"
+    dateType := []string{"createdAt", "updatedAt"}
+    if slices.Contains[string](dateType, date) {
+        fmt.Println("yes")
+    } else {
+        fmt.Println("no")
+    }
 }
 ```
