@@ -1,5 +1,5 @@
 ---
-title: 'hugo部署报错'
+title: 'Hugo+DoIt部署报错'
 date: '2022-06-13'
 tags: ["hugo","DoIt"]
 categories: ["Web"]

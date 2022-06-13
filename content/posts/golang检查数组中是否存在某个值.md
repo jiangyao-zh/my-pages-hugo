@@ -1,5 +1,5 @@
 ---
-title: 'golang检查数组中是否存在某个值'
+title: 'GoLang检查数组中是否存在某个值'
 date: 2022-06-10 10:12:52
 tags: [Go]
 categories: ["开发"]

@@ -7,13 +7,17 @@ draft: false
 ---
 ## 使用Compose对TP5进行部署
 
-### 软件版本说明（数据相对独立，本文不涉及数据库安装，建议使用mysql）
+### 软件版本说明
 
 1. Nginx 1.16
 2. PHP 7.2
 3. CentOS 7.9（已安装）
 4. Docker [20.10.14](https://docs.docker.com/engine/release-notes/)
 5. docker-compose [1.29.1](https://docs.docker.com/compose/release-notes/)（文件格式版本3.0，建议安装最新版本）
+
+{{< admonition type=note title="注意" open=true >}}
+数据相对独立，本文不涉及数据库安装，建议使用mysql
+{{< /admonition >}}
 
 ### 安装Docker
 
