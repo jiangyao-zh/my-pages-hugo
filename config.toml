@@ -64,7 +64,7 @@ theme = "DoIt"
     # LOGO 的 URL
     logo = ""
     # 标题名称
-    name = "Note"
+    name = "$ sh Note.sh"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     pre = '<span class="header-title-pre"><i class="far fa-edit fa-fw"></i></span>'
     # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
@@ -176,10 +176,10 @@ theme = "DoIt"
       [params.page.comment.gitalk]
         # DoIt 新增 | 0.1.1
         enable = true
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
+        owner = "jiangyao"
+        repo = "jiangyao-zh.github.io"
+        clientId = "9551c45c77f3cab6233b"
+        clientSecret = "f6d5d168df51a46e6bd1333d63a0ba503b360f0a"
 
 [menu]
   [[menu.main]]
