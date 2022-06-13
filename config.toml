@@ -68,7 +68,7 @@ theme = "DoIt"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     pre = '<span class="header-title-pre"><i class="far fa-edit fa-fw"></i></span>'
     # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ''
+    post = '<style>.animation::after {content:"";display: inline-block; color: rgb(22, 18, 9);width:3px;height:24px;animation: blink 1s infinite steps(1, start)}@keyframes blink{0%{background-color: white;}50% {background-color: black;}100% {background-color: white;}</style><span class="animation" style="margin: 0px -6.10156px 0px 1.10156px;"></span>'
     # DoIt 新增 | 0.2.5 是否为标题显示打字机动画
     typeit = false  
 
@@ -176,7 +176,7 @@ theme = "DoIt"
       [params.page.comment.gitalk]
         # DoIt 新增 | 0.1.1
         enable = true
-        owner = "jiangyao"
+        owner = "jiangyao-zh"
         repo = "jiangyao-zh.github.io"
         clientId = "9551c45c77f3cab6233b"
         clientSecret = "f6d5d168df51a46e6bd1333d63a0ba503b360f0a"
