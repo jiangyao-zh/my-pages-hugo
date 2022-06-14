@@ -180,6 +180,14 @@ theme = "DoIt"
         repo = "jiangyao-zh.github.io"
         clientId = "9551c45c77f3cab6233b"
         clientSecret = "f6d5d168df51a46e6bd1333d63a0ba503b360f0a"
+ # DoIt 新增 | 0.2.0 网站分析配置
+  [params.analytics]
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-G04687P0ZM"
+      # 是否匿名化用户 IP
+      anonymizeIP = true        
 
 [menu]
   [[menu.main]]
