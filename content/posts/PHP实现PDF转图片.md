@@ -1,6 +1,6 @@
 ---
 title: 'PHP实现PDF转图片'
-date: 2022-09-08 10:25:19
+date: '2022-09-08'
 tags: ["PHP","ImageMagick","Ghostscript"]
 categories: ["WEB"]
 draft: false
